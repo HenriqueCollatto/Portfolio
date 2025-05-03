@@ -1,0 +1,106 @@
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(143, 133, 181, 0.3);
+  position: fixed;
+  border-bottom: 3px solid black; 
+  /*z-index: 1000;  Para garantir que fique acima do conteúdo */
+  font-family: 'Inter', sans-serif ;
+  font-weight: 800 ;
+  font-style: italic;
+  padding: 1rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; 
+  gap: 3rem;
+  opacity: 1;
+  font-size: 23px;
+  
+} 
+
+.nav ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav ul a:hover {
+  color: rgb(34, 216, 204); 
+}
+
+
+.nav a.active {
+  border-bottom: 3px solid white; 
+}
+
+.nav ul a.active:hover {
+  border-bottom: 3px solid rgb(34, 216, 204);
+}
+
+.contact-button{
+  background-color: white;
+  color: #005577  !important;
+  border: 1px solid #005577;
+
+  /* background-color: #00d9ff;
+  color: white; */
+
+  border-radius: 30px;
+  padding: 0.4vh 1vh;  
+  cursor: pointer;
+  font-size:  20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.favicon{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+/* button{
+  background-color: white;
+  color: #005577;
+  border: 1px solid #005577;
+
+  /* background-color: #00d9ff;
+  color: white; */
+
+/*
+  border-radius: 30px;
+  padding: 0.4vh 1vh;  
+  
+  width: auto;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size:  20px;
+  transition: all 0.2s ease;
+  
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+} */
+
+
+
+
