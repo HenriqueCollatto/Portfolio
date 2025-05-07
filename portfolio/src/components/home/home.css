@@ -15,24 +15,65 @@
     border-radius: 50%;  
 }
 
+.text-container{
+    display: inline-block;
+}
+
 .text{
     display: flex;
     flex-direction: column;
     gap: 3rem;  
     font-family: 'Inter', sans-serif;
+    width: 100%;
     
     font-size: clamp(1rem, 3.1vw, 3rem);
     /* use no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
     color: white;
     align-items: center;
     text-align: center;
+
+    
 }
+
 
 #henrique{
     font-style: italic;
     font-weight: 800;
     font-size: clamp(1.5rem, 4.5vw, 5rem);
+   
+
+    animation: blinking 1s steps(1, end) infinite,
+            typing 2s steps(40, end) ;
+    overflow: hidden;
+    white-space: nowrap;
+    
 }
+
+#hello, #im{
+    animation: blinking 1s steps(1, end) infinite,
+            typing 4s steps(40, end) ;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+
+
+@keyframes blinking {
+    0% { border-color: transparent;}
+    50% { border-color: var(white)}
+    100% { border-color: transparent;}
+}
+
+@keyframes typing {
+    0% { width: 0;}
+    100% { width: 100%;}
+    
+}
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -55,7 +96,7 @@
     }
 
     #henrique {
-        font-size: 53px;
+        font-size: 43px;
     }
     
 

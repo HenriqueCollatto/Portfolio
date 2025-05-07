@@ -17,6 +17,10 @@
 
 }
 
+nav a{
+  cursor: pointer; 
+}
+
 .nav ul {
   list-style-type: none;
   display: flex;
@@ -24,6 +28,7 @@
   gap: 3rem;
   opacity: 1;
   font-size: 23px;
+  font-size: 1.5rem;
   
 } 
 
@@ -50,12 +55,10 @@
   color: #005577  !important;
   border: 1px solid #005577;
 
-  /* background-color: #00d9ff;
-  color: white; */
 
   border-radius: 30px;
   padding: 0.4vh 1vh;  
-  cursor: pointer;
+  
   font-size:  20px;
   transition: all 0.3s ease;
   display: inline-block;
@@ -69,38 +72,5 @@
 .favicon{
   width: 40px;
   height: 40px;
+
 }
-
-
-
-
-/* button{
-  background-color: white;
-  color: #005577;
-  border: 1px solid #005577;
-
-  /* background-color: #00d9ff;
-  color: white; */
-
-/*
-  border-radius: 30px;
-  padding: 0.4vh 1vh;  
-  
-  width: auto;
-  cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  font-size:  20px;
-  transition: all 0.2s ease;
-  
-}
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-} */
-
-
-
-

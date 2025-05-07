@@ -63,6 +63,7 @@ h2{
     grid-row: 1 / 2;
     justify-self: end;
     width: 8rem;
+    /* position: absolute; */
 }   
 
 .analysis{

@@ -13,18 +13,74 @@
     gap: 1rem;
 }
 
-#text{
+.title-and-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.techs-button{
+    font-family: 'Inter', sans-serif ;
+    font-weight: 800 ;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+
+    
+    width: 40%; 
+    height: 50px;
+    min-height: 70%;
+
+    font-size: 1rem;
+    padding: 0.3rem 1.2rem;
+    
+    background-color: rgb(28, 25, 68 , 1);
+    outline: 4px solid rgb(217, 217, 217, 1);
+    outline-offset: 0px;
+    
+    border: 0px;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.techs-button.active {
+    background-color: #0babea;
+    
+}
+
+#ds-button{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#others-button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;  
+}
+
+
+#title-technologies{
     font-family: 'Inter', sans-serif;
     color: white;
     align-items: center;
     text-align: center;
+    font-size: clamp(1.5rem, 4.5vw, 5rem);
+    
 }
 
-.all-techs-area{
+.techs-area{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     justify-items: center;
     align-items: center;
     padding: 20px;
 }
+

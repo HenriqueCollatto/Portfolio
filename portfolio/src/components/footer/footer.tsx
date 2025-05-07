@@ -1,0 +1,25 @@
+import './footer.css';
+
+import github from '../../assets/logos/github.svg'
+import linkedin from '../../assets/logos/linkedin.svg'
+
+export default function Footer() {
+    
+    return (
+        <div className='footer'>
+            <p className='footer-text'>
+                Copyright © Henrique Collatto, 2025
+            </p> 
+            <div className='footer-images'>
+                <a href="https://github.com/HenriqueCollatto">
+                    <img src={github} alt="github" className='footer-image' />
+                </a>
+                <a href="https://github.com/HenriqueCollatto">
+                    <img src={linkedin} alt="linkedin" className='footer-image' />
+                </a>
+            </div> 
+
+
+        </div>
+    )
+}

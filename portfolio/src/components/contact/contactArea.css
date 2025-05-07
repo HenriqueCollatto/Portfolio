@@ -1,0 +1,16 @@
+.contact-area{
+    height: 300px;
+    width: 100px;
+    background-color: rgb(217, 217, 217, 0.5);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-img{
+    height: 30px;
+    width: 30px;
+}

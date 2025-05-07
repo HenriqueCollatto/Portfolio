@@ -1,0 +1,28 @@
+.projects{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#text{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    font-style: italic;
+    font-weight: 800;
+    font-size: clamp(1.5rem, 4.5vw, 5rem);
+}
+
+.projects-area{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
