@@ -11,10 +11,10 @@ export default function Footer() {
                 Copyright © Henrique Collatto, 2025
             </p> 
             <div className='footer-images'>
-                <a href="https://github.com/HenriqueCollatto">
+                <a href="https://github.com/HenriqueCollatto" target='_blank'>
                     <img src={github} alt="github" className='footer-image' />
                 </a>
-                <a href="https://github.com/HenriqueCollatto">
+                <a href="https://github.com/HenriqueCollatto" target='_blank'>
                     <img src={linkedin} alt="linkedin" className='footer-image' />
                 </a>
             </div> 

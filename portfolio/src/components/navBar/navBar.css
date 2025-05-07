@@ -55,7 +55,6 @@ nav a{
   color: #005577  !important;
   border: 1px solid #005577;
 
-
   border-radius: 30px;
   padding: 0.4vh 1vh;  
   
@@ -72,5 +71,55 @@ nav a{
 .favicon{
   width: 40px;
   height: 40px;
+}
 
+/* Burger Navigation */
+
+.burger {
+  display: none;
+}
+
+.burgerContainer{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #c40e0e;
+  margin: 5px;
+  border-radius: 25%;
+}
+
+@media (max-width: 700px) {
+  nav {
+    position: fixed;
+    padding: 20px;
+    right: -100%; /* Hiding the Nav */
+    height: calc(100% - 70px); /* Minus header height */
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    background: #fff;
+    border-left: solid 1px #ddd;
+    transition: all 0.4s ease;
+  }
+  nav.showNav{
+    right: 0;
+  }
+  nav ul{
+    width: 100%;
+  }
+  .navbar .nav-link{
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .burger{
+    display: inline-block;
+  }
 }

@@ -76,3 +76,21 @@ h2{
     justify-self: first baseline;
     width: 16rem
 }
+
+@media (max-width: 900px) {
+    .analysis{
+        width: 10rem
+    }  
+}
+
+
+@media (max-width: 500px) {
+    .dice{
+
+        width: 6rem;
+       
+    }  
+    .analysis{
+        width: 7rem
+    }  
+}

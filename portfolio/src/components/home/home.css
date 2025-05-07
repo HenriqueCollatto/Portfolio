@@ -1,11 +1,28 @@
 .home{
     display: flex;
+    flex-direction: column;
+    position: relative; /* Container pai deve ser relativo */
+    min-height: 91vh; /* Altura mínima da viewport */
+    
+}
+
+
+.mid{
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     padding: 2rem;
     padding-top: 4rem;
     min-width: 100%;
+}
+
+.connectedPoints{
+    width: 100%;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -30,9 +47,7 @@
     /* use no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
     color: white;
     align-items: center;
-    text-align: center;
-
-    
+    text-align: center;  
 }
 
 
@@ -54,7 +69,6 @@
             typing 4s steps(40, end) ;
     overflow: hidden;
     white-space: nowrap;
-
 }
 
 
@@ -68,24 +82,23 @@
 @keyframes typing {
     0% { width: 0;}
     100% { width: 100%;}
-    
+   
 }
 
 
 
 
 
-
 @media (max-width: 768px) {
-    .home {
+    .mid {
       flex-direction: column;
       padding: 2rem;
       gap: 2rem;
     }
   
     .photo{
-        height: 250px;
-        width:250px;  
+        height: 230px;
+        width:230px;  
     }
 
 

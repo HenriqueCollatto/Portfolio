@@ -39,7 +39,7 @@
 h4{
     font-style: italic;
     font-weight: 800;
-    font-size: clamp(0.5rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 #project-desc{
@@ -53,6 +53,7 @@ h4{
     width: 100%;
     padding: 0.2rem ;
     align-items: end;
+    margin: 0;
 }
 
 .tech-stack {
@@ -60,10 +61,12 @@ h4{
     gap: 0.5rem;
     margin-top: 0.3rem;
     align-items: center;
-
-    
 }
   
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
 .tech-icon {
     width: 24px;
     height: 24px;
@@ -78,3 +81,34 @@ h4{
     height: 30px;
     width: 30px;
 }
+
+#github-img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    .project-area{
+        width: 240px;
+        height: 337px;
+        
+    }
+
+    #project-desc{
+        font-size: 14px;        
+    }
+    
+    .tech-stack-and-view-projects{
+        font-size: 12px;
+    }
+
+    .tech-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #github-img{
+        height: 25px;
+        width: 25px;
+    }
+}
+

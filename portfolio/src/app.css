@@ -21,27 +21,29 @@ html {
 
 #home{
     background-image: url("./assets/background/backgroundPoints.jpeg");
-    /* background: linear-gradient(to bottom, #23e4c7, #14143d); */
+    background: linear-gradient(to bottom, #23e4c7, #14143d);
+    padding: 0;
+    padding-top: 4rem;
 }
 
 #about{
     background-image: url("./assets/background/background1.jpeg");
-    /* background: linear-gradient(to top, #23e4c7, #14143d); */
+    background: linear-gradient(to top, #23e4c7, #14143d);
 }
 
 #techs{
     background-image: url("./assets/background/background1.3.png"); 
-    /* background: linear-gradient(to bottom, #23e4c7, #14143d);   */
+    background: linear-gradient(to bottom, #23e4c7, #14143d);  
 }
 
 #projects{
     background-image: url("./assets/background/background1.jpeg");
-    /* background: linear-gradient(to top, #23e4c7, #14143d);  */
+    background: linear-gradient(to top, #23e4c7, #14143d); 
 }
 
 #contact{
     background-image: url("./assets/background/background1.3.png"); 
-    /* background: linear-gradient(to bottom, #23e4c7, #14143d);   */
+    background: linear-gradient(to bottom, #23e4c7, #14143d);  
 }
 
 

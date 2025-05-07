@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 
 import NavBar from './components/navBar/navbar'
 import Home from './components/home/home'
@@ -9,7 +9,7 @@ import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 
 import './app.css'
-import { useEffect } from 'react'
+
 
 
 function App() {

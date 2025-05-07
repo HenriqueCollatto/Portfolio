@@ -29,8 +29,9 @@ export default function ProjectArea(object : {name : string,
 
                     <div className='view-projects'>
                         View project:  
-                        <a href={object.githubLink}>
+                        <a href={object.githubLink} target='_blank'>
                             <img src={github} alt='object.name' id='github-img' />
+                        
                         </a>
                     </div>                
             </div>

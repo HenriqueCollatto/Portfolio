@@ -5,8 +5,7 @@ export default function Home() {
     
     return (
         <div className="home">
-            
-            {/* <div className='mid'> */}
+            <div className='mid'>
                 <img src={myPhoto} className="photo" alt="photo" />
                 <div className='text-container'>
                     <div className='text'>
@@ -17,12 +16,10 @@ export default function Home() {
                         <br/> 
                         and
                         </p>
-                    </div>
-                    
-                {/* </div> */}
+                    </div>  
+                </div>
             </div>
-            {/* <img src={connectedPoints} className="connectedPoints" alt="connected points" /> */}
-       
+            <img src={connectedPoints} className="connectedPoints" alt="connected points" />
         </div> 
     )
 }

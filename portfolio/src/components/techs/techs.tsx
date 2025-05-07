@@ -27,6 +27,7 @@ export default function Techs() {
     
     return (
         <div className="techs">
+
             <div className='title-and-buttons'>
                 <h2 id='title-technologies'>Technologies</h2>
                 <div className='buttons-area'>                    
@@ -41,7 +42,7 @@ export default function Techs() {
                         className={`techs-button ${techs === "web" ? "active" : ""}`}
                         id='web-button' 
                         onClick={() => setTechs("web")}>
-                        Web <br /> 
+                        Web <br /> Dev
                     </button>
 
                     <button 

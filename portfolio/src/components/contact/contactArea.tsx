@@ -6,8 +6,8 @@ export default function ContactArea(object : {name : string,
                                             }) {
     return (
         <div className="contact-area">
-            <h4>{object.name}</h4>
-            <a href={object.link}>
+            <a href={object.link} target='_blank'>
+                <h4>{object.name}</h4>
                 <img src={object.image} alt={object.name} id='contact-img' />
             </a>
         </div>
