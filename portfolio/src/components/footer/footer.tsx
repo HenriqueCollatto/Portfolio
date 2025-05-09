@@ -3,10 +3,11 @@ import './footer.css';
 import github from '../../assets/logos/github.svg'
 import linkedin from '../../assets/logos/linkedin.svg'
 
-export default function Footer() {
-    
+
+export default function Footer({ background = 'linear-gradient(to bottom, #23e4c7, #14143d)' }: {background : string}) {
+
     return (
-        <div className='footer'>
+        <div className='footer' style={{background}}>
             <p className='footer-text'>
                 Copyright © Henrique Collatto, 2025
             </p> 
@@ -18,8 +19,6 @@ export default function Footer() {
                     <img src={linkedin} alt="linkedin" className='footer-image' />
                 </a>
             </div> 
-
-
         </div>
     )
 }

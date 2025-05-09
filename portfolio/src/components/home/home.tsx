@@ -8,14 +8,18 @@ export default function Home() {
             <div className='mid'>
                 <img src={myPhoto} className="photo" alt="photo" />
                 <div className='text-container'>
-                    <div className='text'>
-                        <p id='hello'>Hello! My name is</p>
-                        <p id='henrique'>Henrique Collatto</p>
-                        <p id='im'>
-                        I'm a data science and IA student
-                        <br/> 
-                        and
+                    <div className='home-text'>
+                        <p className='typing' id='hello'>Hello! My name is</p>
+                        <p className='typing'>
+                            <span className='typing-span' id='henrique'>Henrique Collatto</span>
                         </p>
+                        <div className='im-and-and'>
+                            <p className='typing' id='im'>
+                            I'm passionate about data, technology,</p>
+                            <p className='typing' id='and'>
+                            and intelligent solutions.
+                            </p>
+                        </div>
                     </div>  
                 </div>
             </div>

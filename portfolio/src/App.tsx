@@ -48,7 +48,7 @@ function App() {
         } />
       </Routes>
 
-      <Footer />
+      <Footer background={'linear-gradient(to bottom, #23e4c7, #14143d)'} />
     </Router>
   )
 }

@@ -22,7 +22,7 @@ export default function Projects() {
     return (
         <div className="projects">
             
-            <h2 id='text'>Projects</h2>
+            <h2 id='projects-title'>Projects</h2>
 
             <div className='projects-area'>
                 <ProjectArea name='Calculator'
@@ -45,7 +45,7 @@ export default function Projects() {
 
                 <ProjectArea name='Portfolio'
                              image={Portfolio}  
-                             desc='A clean and straightforward website where you can check out the technologies
+                             desc='A clean website where you can check out the technologies
                               I use, explore some of my projects, and get in touch with me. Everythin`s organized
                              into sections with a modern and easy-to-navigate design.'
                              githubLink='https://github.com/HenriqueCollatto/Calculadora.git'

@@ -1,9 +1,9 @@
-.home{
+/* .home{
     display: flex;
     flex-direction: column;
-    position: relative; /* Container pai deve ser relativo */
-    min-height: 91vh; /* Altura mínima da viewport */
-    
+    position: relative;
+    min-height: 91vh;
+
 }
 
 
@@ -16,73 +16,162 @@
     padding: 2rem;
     padding-top: 4rem;
     min-width: 100%;
+    z-index: 9998;
 }
 
 .connectedPoints{
-    width: 100%;    
+    width: 100%;
     position: absolute;
+    bottom: 0;
+    left: 0;
+}
+*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+.mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
+    min-width: 100%;
+    z-index: 9998;
+}
+
+.connectedPoints{
+    width: 100%;
+
     bottom: 0;
     left: 0;
 }
 
 
 .photo{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;  
+
+    /* height: 40vh;
+    width: 40vh; */
+    height: clamp(10rem, 32vw, 22rem);
+    width: clamp(10rem, 32vw, 22m);
+    
+    
+
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 3px solid white;
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+
+    opacity: 0;
+    transform: scale(0.93);
+    animation: appear 3s ease-out forwards;
+    animation-delay: 1s;
+
 }
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* .photo:hover {
+    transform: scale(1.03);
+} */
 
 .text-container{
     display: inline-block;
 }
 
-.text{
+.home-text{
     display: flex;
     flex-direction: column;
-    gap: 3rem;  
+    gap: clamp(1.5rem, 4vw, 3rem);
     font-family: 'Inter', sans-serif;
+    height: auto;
     width: 100%;
-    
-    font-size: clamp(1rem, 3.1vw, 3rem);
-    /* use no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
+
+    font-size: clamp(1.3rem, 2.3vw, 3rem); /*no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
     color: white;
     align-items: center;
-    text-align: center;  
+    text-align: center;
 }
 
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.typing-span {
+    display: inline-block;
+    white-space: nowrap; /* só o span tem a restrição */
+    overflow: hidden;
+    visibility: hidden;
+    animation: typing 2s steps(40, end) forwards;
+    animation-delay: 2s;
+}
 
 #henrique{
     font-style: italic;
     font-weight: 800;
-    font-size: clamp(1.5rem, 4.5vw, 5rem);
-   
+    font-size: clamp(2.7rem, 4.7vw, 4rem);
 
-    animation: blinking 1s steps(1, end) infinite,
-            typing 2s steps(40, end) ;
-    overflow: hidden;
-    white-space: nowrap;
-    
+
+    animation: typing 2s steps(40, end) forwards;
+    animation-delay: 2s;
 }
 
-#hello, #im{
-    animation: blinking 1s steps(1, end) infinite,
-            typing 4s steps(40, end) ;
-    overflow: hidden;
-    white-space: nowrap;
+#hello{
+    animation: typing 4s steps(40, end) forwards;
+    animation-delay: 0s;
 }
 
+.im-and-and{
+    display: flex;
+    flex-direction: column;
 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
-@keyframes blinking {
-    0% { border-color: transparent;}
-    50% { border-color: var(white)}
-    100% { border-color: transparent;}
 }
+
+#im{
+    animation: typing 3s steps(40, end) forwards;
+    animation-delay: 4s;
+}
+
+#and{
+    animation: typing 4s steps(40, end) forwards;
+    animation-delay: 7s;
+}
+
 
 @keyframes typing {
-    0% { width: 0;}
-    100% { width: 100%;}
-   
+    0% {
+        width: 0;
+        visibility: visible;
+    }
+    100% {
+        width: 100%;
+        visibility: visible;
+    }
 }
 
 
@@ -93,28 +182,36 @@
     .mid {
       flex-direction: column;
       padding: 2rem;
-      gap: 2rem;
+      gap: 1.5rem;
     }
-  
+
     .photo{
         height: 230px;
-        width:230px;  
+        width:230px;
     }
 
-
-    .text {
-      font-size: 33px; 
-      text-align: center;
+    .home-text {
       gap: 1rem;
     }
 
-    #henrique {
-        font-size: 43px;
-    }
-    
+}
 
-    
-   
+
+@media (max-width: 500px) {
+    .mid {
+      gap: 1rem;
+    }
+
+    .photo{
+        height: 230px;
+        width:230px;
+    }
+
+    .home-text {
+      gap: 0.8rem;
+    }
+
+
 }
 
 

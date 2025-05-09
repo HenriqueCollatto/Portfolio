@@ -8,6 +8,21 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, p, a, button, div{
+    font-family: 'Inter', sans-serif;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(2.7rem, 5vw, 4.4rem);   
+}
+
+
+
 .container{
     background-repeat: no-repeat;
     background-position: center;
@@ -15,6 +30,7 @@ html {
     width: 100%;
     padding: 4rem;
     min-height: 100vh;
+    min-height: auto;
     
 }
 
@@ -43,10 +59,8 @@ html {
 
 #contact{
     background-image: url("./assets/background/background1.3.png"); 
-    background: linear-gradient(to bottom, #23e4c7, #14143d);  
+    background: linear-gradient(to top, #23e4c7, #14143d);  
 }
-
-
 
 
 

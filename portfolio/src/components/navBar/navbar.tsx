@@ -1,7 +1,8 @@
 
 
 import './navbar.css';
-import favicon from '../../../public/vite.svg'
+import favicon from '../../assets/logo2.svg'
+import favicon2 from '../../../public/logo.svg'
 
 import { useState } from "react";
 
@@ -15,8 +16,9 @@ export default function NavBar() {
         <>
         <header>
             <nav className="nav">
-                <a onClick={() => window.location.href = '/'}>
-                    <img src={favicon} className="favicon" alt="favicon" />
+                <a className='favicon' onClick={() => window.location.href = '/'}>
+                    <img src={favicon} className="faviconImg" alt="favicon" />
+                    <img src={favicon2} className="faviconImg" alt="favicon2" />
                 </a>
                 <ul className="ul">
                     <li>
@@ -43,7 +45,7 @@ export default function NavBar() {
                             Projects
                         </a>
                     </li>
-                    <li><a href="/contact" className='contact-button'>Contact Me</a></li>
+                    <li><a href="/contact" id='contact-button' className='contact-button'>Contact Me</a></li>
 
                     
                 </ul>

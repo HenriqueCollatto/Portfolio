@@ -8,7 +8,7 @@
     outline-offset: 0px;
     border: 0px;
  
-    font-family: 'Inter', sans-serif;
+    
     color: white; 
 
 
@@ -16,6 +16,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between  ;
+
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     
 }
 
@@ -45,13 +50,14 @@ h4{
 #project-desc{
     font-size: 18px;
     color: rgb(229, 229, 229, 1);
-    padding: 0.2rem ;
+    padding: 0.4rem ;
     
 }
 
 .tech-stack-and-view-projects{
     width: 100%;
-    padding: 0.2rem ;
+    padding: 0.4rem;
+    padding-bottom: 0.2rem;
     align-items: end;
     margin: 0;
 }

@@ -29,7 +29,7 @@ export default function Techs() {
         <div className="techs">
 
             <div className='title-and-buttons'>
-                <h2 id='title-technologies'>Technologies</h2>
+                <h2 id='techs-title'>Technologies</h2>
                 <div className='buttons-area'>                    
                     <button 
                         className={`techs-button ${techs === "ds" ? "active" : ""}`}
