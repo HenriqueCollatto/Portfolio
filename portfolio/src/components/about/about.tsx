@@ -1,6 +1,6 @@
 import './about.css';
 
-import dice from '../../assets/dice.png'
+// import dice from '../../assets/dice.png'
 import analysis from '../../assets/analysisImg.png'
 import programming from '../../assets/programming.svg'
 export default function About() {
