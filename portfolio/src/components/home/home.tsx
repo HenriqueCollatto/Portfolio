@@ -1,6 +1,11 @@
 import './home.css';
 import myPhoto from '../../assets/myPhoto.jpeg'
 import connectedPoints from '../../assets/background/connectedPoints.png'
+import connectedPoints2 from '../../assets/background/points.png'
+import connectedPoints3 from '../../assets/background/points2.png'
+import connectedPoints4 from '../../assets/background/points3.png'
+import connectedPoints5 from '../../assets/background/points4.png'
+
 export default function Home() {
     
     return (

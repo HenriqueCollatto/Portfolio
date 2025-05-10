@@ -15,7 +15,7 @@ export default function Footer({ background = 'linear-gradient(to bottom, #23e4c
                 <a href="https://github.com/HenriqueCollatto" target='_blank'>
                     <img src={github} alt="github" className='footer-image' />
                 </a>
-                <a href="https://github.com/HenriqueCollatto" target='_blank'>
+                <a href="https://www.linkedin.com/in/henrique-collatto-5858bb325/" target='_blank'>
                     <img src={linkedin} alt="linkedin" className='footer-image' />
                 </a>
             </div> 

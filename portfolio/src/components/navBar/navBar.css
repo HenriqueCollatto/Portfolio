@@ -24,15 +24,21 @@ nav a{
   cursor: pointer; 
 }
 
-.nav ul {
+.right-side {
+  display: flex;
+  justify-content: space-between; 
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav ul{
   list-style-type: none;
   display: flex;
   justify-content: space-between; 
   gap: 3rem;
   opacity: 1;
   font-size: 23px;
-  font-size: 1.5rem;
-  
+  font-size: 1.5rem; 
 } 
 
 .nav ul a {
@@ -56,10 +62,15 @@ nav a{
   border-image: linear-gradient(to right, #201D48, #4D46AE) 1;
 }
 
-.contact-button{
-  background-color: white;
+#contact-button{
+  /* background-color: white;
   color: #005577  !important;
-  border: 1px solid #005577;
+  border: 1px solid #005577; */
+
+  text-decoration: none;
+  background-color: transparent;
+  color: white ;
+  border: 3px solid #ffffff;
 
   border-radius: 30px;
   padding: 0.4vh 1vh;  
@@ -67,11 +78,13 @@ nav a{
   font-size:  20px;
   transition: all 0.3s ease;
   display: inline-block;
+
 }
 
-.contact-button:hover {
+#contact-button:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  color: #005577;
+  background-color: white;
 }
 
 .favicon {
@@ -131,7 +144,7 @@ nav a{
   border-radius: 25%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
   nav {
     position: fixed;
     padding: 20px;

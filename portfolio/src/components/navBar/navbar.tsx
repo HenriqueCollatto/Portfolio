@@ -20,36 +20,35 @@ export default function NavBar() {
                     <img src={favicon} className="faviconImg" alt="favicon" />
                     <img src={favicon2} className="faviconImg" alt="favicon2" />
                 </a>
-                <ul className="ul">
-                    <li>
-                        <a className={navBarOption === "home" ? "active" : ""} href="/#home"
-                            onClick={() => setNavBarOption("home")}>
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a className={navBarOption === "about" ? "active" : ""} href="/#about"
-                            onClick={() => setNavBarOption("about")}>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a className={navBarOption === "techs" ? "active" : ""} href="/#techs"
-                            onClick={() => setNavBarOption("techs")}>
-                            Techs
-                        </a>
-                    </li>
-                    <li>
-                        <a className={navBarOption === "projects" ? "active" : ""} href="/#projects"
-                            onClick={() => setNavBarOption("projects")}>
-                            Projects
-                        </a>
-                    </li>
-                    <li><a href="/contact" id='contact-button' className='contact-button'>Contact Me</a></li>
-
-                    
-                </ul>
-                
+                <div className='right-side'>
+                    <ul >
+                        <li>
+                            <a className={navBarOption === "home" ? "active" : ""} href="/#home"
+                                onClick={() => setNavBarOption("home")}>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a className={navBarOption === "about" ? "active" : ""} href="/#about"
+                                onClick={() => setNavBarOption("about")}>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a className={navBarOption === "techs" ? "active" : ""} href="/#techs"
+                                onClick={() => setNavBarOption("techs")}>
+                                Techs
+                            </a>
+                        </li>
+                        <li>
+                            <a className={navBarOption === "projects" ? "active" : ""} href="/#projects"
+                                onClick={() => setNavBarOption("projects")}>
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="/contact" id='contact-button'>Contact Me</a>
+                </div>
             </nav>
 
             <div className='burgerContainer'>

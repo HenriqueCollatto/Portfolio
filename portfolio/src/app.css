@@ -43,22 +43,22 @@ h2{
 }
 
 #about{
-    background-image: url("./assets/background/background1.jpeg");
+    background-image: url("./assets/background/background2.jpeg");
     background: linear-gradient(to top, #23e4c7, #14143d);
 }
 
 #techs{
-    background-image: url("./assets/background/background1.3.png"); 
+    background-image: url("./assets/background/background1.png"); 
     background: linear-gradient(to bottom, #23e4c7, #14143d);  
 }
 
 #projects{
-    background-image: url("./assets/background/background1.jpeg");
+    background-image: url("./assets/background/background2.jpeg");
     background: linear-gradient(to top, #23e4c7, #14143d); 
 }
 
 #contact{
-    background-image: url("./assets/background/background1.3.png"); 
+    background-image: url("./assets/background/background2.jpeg"); 
     background: linear-gradient(to top, #23e4c7, #14143d);  
 }
 
@@ -67,6 +67,10 @@ h2{
 @media (max-width: 768px) {
     .container{
         padding: 2rem;
+        padding-top: rem;
+    }
+    #home{
+        padding-top: 1rem;
     }
 }
 
