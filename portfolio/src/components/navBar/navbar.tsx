@@ -1,6 +1,6 @@
 
 
-import './navbar.css';
+import './navBar.css';
 import favicon from '../../assets/logo2.svg'
 import favicon2 from '../../../public/logo.svg'
 
