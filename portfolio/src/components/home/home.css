@@ -106,7 +106,7 @@
     height: auto;
     width: 100%;
 
-    font-size: clamp(1.3rem, 2.3vw, 3rem); /*no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
+    font-size: clamp(1.1rem, 2.3vw, 3rem); /*no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
     color: white;
     align-items: center;
     text-align: center;
@@ -132,7 +132,7 @@
 #henrique{
     font-style: italic;
     font-weight: 800;
-    font-size: clamp(2.7rem, 4.7vw, 4rem);
+    font-size: clamp(2.5rem, 4.7vw, 4rem);
 
 
     animation: typing 2s steps(40, end) forwards;
@@ -151,7 +151,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-
 }
 
 #im{
@@ -180,19 +179,26 @@
     .home{
         min-height: 70vh;
     }
+    .mid {
+      padding-top: 2rem;
+    }
+    .photo{
+        height: clamp(7rem, 25vw, 15rem);
+        width: clamp(7rem, 25vw, 15rem);
+    }
 }
 
 
 
 @media (max-width: 768px) {
     .home{
-        min-height: 65vh;
+        min-height: 75vh;
     }
     .mid {
       flex-direction: column;
       padding: 2rem;
       gap: 1.5rem;
-      padding-top: 1rem;
+      padding-top: 4rem;
     }
 
     .photo{
@@ -206,18 +212,24 @@
 
 }
 
+@media (max-width: 700px) {
+    .mid {
+        padding-top: 2rem;
+    }
+}
+
 
 @media (max-width: 500px) {
     .home{
-        min-height: 60vh;
+        min-height: 65vh;
     }
     .mid {
       gap: 1rem;
     }
 
     .photo{
-        height: 230px;
-        width:230px;
+        height: 210px;
+        width:210px;
     }
 
     .home-text {
