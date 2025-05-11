@@ -1,9 +1,9 @@
 import './about.css';
 
 
-import programming from '../../assets/programming.svg'
-import analytics from '../../assets/analytics.svg'
-import soccer from '../../assets/soccer.svg'
+import programming from '../../assets/about/programming.svg'
+import analytics from '../../assets/about/analytics.svg'
+import soccer from '../../assets/about/soccer.svg'
 
 export default function About() {
     
