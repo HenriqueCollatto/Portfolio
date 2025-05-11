@@ -3,7 +3,7 @@ import ProjectArea from './projectArea';
 
 import CurrencyConverter from '../../assets/projectImages/currencyConverter.png'
 import Calculator from '../../assets/projectImages/calculadora.png'
-import Portfolio from '../../assets/projectImages/portfolio2.png'
+import Portfolio from '../../assets/projectImages/porfolioImg.png'
 
 
 
@@ -48,7 +48,7 @@ export default function Projects() {
                              desc='A clean website where you can check out the technologies
                               I use, explore some of my projects, and get in touch with me. Everythin`s organized
                              into sections with a modern and easy-to-navigate design.'
-                             githubLink='https://github.com/HenriqueCollatto/Calculadora.git'
+                             githubLink='https://github.com/HenriqueCollatto/Portfolio.git'
                              techStackImages={[html, css, ts, react]}>
                 </ProjectArea>
 

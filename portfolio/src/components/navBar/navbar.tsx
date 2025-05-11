@@ -10,7 +10,7 @@ export default function NavBar() {
 
     const [navBarOption, setNavBarOption] = useState("home");
 
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <>
@@ -22,7 +22,7 @@ export default function NavBar() {
                 </a>
 
                 {/* Menu de navegação - aparece em telas grandes e, com a classe, no mobile */}
-                <ul className={menuOpen ? 'nav-links open' : 'nav-links'}>
+                <ul className={menuOpen ? 'nav-links' : 'nav-links open'}>
                     <li>
                         <a className={navBarOption === "home" ? "active" : ""} href="/#home"
                             onClick={() => { setNavBarOption("home"); setMenuOpen(false); }}>

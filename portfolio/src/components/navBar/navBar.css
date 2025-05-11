@@ -153,6 +153,7 @@ nav a{
   .nav {
     width: 100%;
     height: 40px;
+    border-bottom: 2.3px solid black; 
   }
 
   .faviconImg {
@@ -175,18 +176,13 @@ nav a{
     padding: 1rem;
     border-radius: 10px;
     z-index: 10000;
-
     
-    background-color: rgba(32, 29, 72, 0.8); 
-
-    /* opcao 1
-    background-color: rgba(32, 29, 72, 0.9); */
-
-    background-color: #1A1F36; 
-    background-color: rgba(0, 0, 0, 0.85) ;
-    background: linear-gradient(to top, #201D48, #4D46AE);
-    background: linear-gradient(to top, #23e4c7, #14143d);
+    /* background-color: rgba(32, 29, 72, 0.8);  */
     background: linear-gradient(to bottom, #23e4c7, #14143d);
+  }
+  
+  .nav-links.open {
+    display: none;
   }
 
   .nav ul a {
@@ -195,17 +191,12 @@ nav a{
   }
 
   .nav ul a:hover {
-  background: linear-gradient(to top, #201D48, #4D46AE);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    background: linear-gradient(to top, #201D48, #4D46AE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } 
 
-
-
-  .nav-links.open {
-    display: none;
-  }
 
   .burger {
     display: block;
