@@ -18,7 +18,7 @@ export default function Home() {
                         </p>
                         <div className='im-and-and'>
                             <p className='typing' id='im'>
-                            I'm passionate about data, technology,</p>
+                            I'm passionate about data, technology</p>
                             <p className='typing' id='and'>
                             and intelligent solutions.
                             </p>

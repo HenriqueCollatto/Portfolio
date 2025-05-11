@@ -1,113 +1,115 @@
 .about{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
-    min-width: 100%;
-    position: relative; */
     padding-top: 1.7rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    
     color: white;
     align-items: center;
     text-align: center;
-
 }
 
-
+.text-and-images{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr; 
+    grid-template-rows: 1fr; 
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem;
+    padding-top: 0rem;
+}
 
 .about-text-area{
     background-color: rgb(255, 255, 255, 0.4);
     border-radius: 20px;
-    width: 70%;
+    width: 100%;
+
     height: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
 
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
 }
 
 
 #about-text{
-    font-size: clamp(1rem, 5vh, 3rem);
     font-size: clamp(1.3rem, 2.3vw, 3rem);
 }
-
-
-.text-and-images{
+.about-right-images{
     display: flex;
-    gap: 0px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 80%; 
+    justify-content: start;
 }
 
+.about-left-images{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
 
 #programming{
-    /* width: 20vh;
-    height: 18vh;
-    position: absolute; */
-
-
-    width: 8rem;
-    /* position: absolute; */
+    width: clamp(3rem, 6vw, 8rem);
 }
 
-
-/* .dice{
-    /* width: 20vh;
-    height: 18vh;
-    position: absolute; */
-
-    /* grid-column: 1 / 1;
-    grid-row: 1 / 2;
-    justify-self: end;
-    width: 8rem; */
-    /* position: absolute;
-}    */
-
-#analysis{
-    /* width: 33vh;
-    height: 36.6vh;
-    position: absolute;    */
-    justify-self: end;
-    width: 12rem;
-    height: 15rem;
+#soccer{
+    width: clamp(4rem, 6vw, 5rem);
 }
+
+#analytics{
+    width: clamp(5rem, 8vw, 8rem);
+}
+
 
 @media (max-width: 900px) {
-    #analysis{
-        width: 0rem;
+    .text-and-images{
+        padding: 0.5rem;
     }
-
-    #programming{
-        width: 0rem;
-    }
-
     .about-text{
-        padding: 0.7;
+        padding: 0.7rem;
     }
 
     .about-text-area{
-        width: 80%;
-        padding: 0.7;
+        padding: 0.7rem;
     }
 }
 
 
 @media (max-width: 720px) {
     .about-text-area{
-        width: 90%;
+        padding: 0.5rem;
     }
+
 }
 
 @media (max-width: 520px) {
-    .about-text-area{
-        width: 100%;
+
+    .text-and-images{
+        display: inline;
+    }
+
+    .text-and-images{
+        gap: 0rem;
+    }
+    .about-right-images{
+        width: 0;
+    }
+
+    .about-left-images{
+        width: 0;
+    }
+
+    #programming{
+    width: 0;
+    }
+
+    #soccer{
+        width: 0;
+    }
+
+    #analytics{
+        width: 0;
     }
 }
