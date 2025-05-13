@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 
-import NavBar from './components/navBar/navbar'
+import NavBar from './components/navBar/navBar'
 import Home from './components/home/home'
 import About from './components/about/about'
 import Techs from './components/techs/techs'
@@ -26,7 +26,7 @@ function App() {
           <>
             <div className='container' id='home'>
               <Home></Home>
-            
+             
             </div>
             <div className='container' id='about'>
               <About/>

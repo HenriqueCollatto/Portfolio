@@ -28,47 +28,12 @@
 }
 
 
-/* .home{
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.mid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 0;
-    min-width: 100%;
-    z-index: 9998;
-}
-
-.connectedPoints{
-    width: 100%;
-
-    bottom: 0;
-    left: 0;
-} */
 
 
 .photo{
-
-    /* height: 40vh;
-    width: 40vh; */
     height: clamp(10rem, 32vw, 20rem);
-    width: clamp(10rem, 32vw, 20rem);
-
-    /* height: 250px;
-    width:  250px; */
+    width: clamp(10rem, 32vw, 20rem);   
     
-    
-
-
     border-radius: 50%;
 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
