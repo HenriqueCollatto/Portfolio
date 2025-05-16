@@ -9,7 +9,13 @@ export default function Home() {
     return (
         <div className="home">
             <div className='mid'>
-                <img src={myPhoto} className="photo" alt="photo" />
+
+                <div className='photo-container'>
+                    <img src={myPhoto} className="photo" alt="photo" />
+                    <p className='typing' id='data-scientist'>Data Scientist</p>
+                </div>
+
+
                 <div className='text-container'>
                     <div className='home-text'>
                         <p className='typing' id='hello'>Hello! My name is</p>

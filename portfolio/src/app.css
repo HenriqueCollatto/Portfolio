@@ -60,6 +60,7 @@ h2{
 #contact{
     background-image: url("./assets/background/background2.jpeg"); 
     background: linear-gradient(to top, #23e4c7, #14143d);  
+    min-height: 100vh;
 }
 
 

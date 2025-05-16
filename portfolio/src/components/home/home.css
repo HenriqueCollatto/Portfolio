@@ -6,6 +6,11 @@
 
 }
 
+.home p {
+    color: white;
+    
+}
+
 
 .mid{
     display: flex;
@@ -63,6 +68,14 @@
     display: inline-block;
 }
 
+.photo-container{
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
 .home-text{
     display: flex;
     flex-direction: column;
@@ -92,6 +105,14 @@
     visibility: hidden;
     animation: typing 2s steps(40, end) forwards;
     animation-delay: 2s;
+}
+
+#data-scientist{
+   
+    font-size: clamp(1.7rem, 2.3vw, 3rem);
+    animation: typing 2s steps(40, end) forwards;
+    animation-delay: 2s;
+    text-align: center;
 }
 
 #henrique{
@@ -186,10 +207,13 @@
 
 @media (max-width: 500px) {
     .home{
-        min-height: 65vh;
+        min-height: 90vh;
     }
     .mid {
-      gap: 1rem;
+      padding-top: 3rem;
+      gap: 3rem;
+      height: 95vh;
+      justify-content: center;
     }
 
     .photo{
