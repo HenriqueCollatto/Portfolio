@@ -84,7 +84,7 @@
     height: auto;
     width: 100%;
 
-    font-size: clamp(1.1rem, 2.3vw, 3rem); /*no mínimo 1rem, no máximo 3rem, e tente seguir % da largura da tela */
+    font-size: clamp(1.1rem, 2.3vw, 3rem); 
     color: white;
     align-items: center;
     text-align: center;
@@ -100,7 +100,7 @@
 
 .typing-span {
     display: inline-block;
-    white-space: nowrap; /* só o span tem a restrição */
+    white-space: nowrap; 
     overflow: hidden;
     visibility: hidden;
     animation: typing 2s steps(40, end) forwards;
@@ -210,20 +210,27 @@
         min-height: 90vh;
     }
     .mid {
-      padding-top: 3rem;
-      gap: 3rem;
-      height: 95vh;
-      justify-content: center;
+        padding-top: 6rem;
+        gap: 5rem;
+        height: 90vh;
+        justify-content: start;
     }
 
     .photo{
-        height: 210px;
-        width:210px;
+        height: 220px;
+        width:220px;
     }
 
     .home-text {
-      gap: 0.8rem;
+      gap: 1rem;
     }
+
+    .home-text{
+
+    font-size: clamp(1.1rem, 5vw, 3rem); 
+   
+}
+
 
 
 }
