@@ -206,12 +206,9 @@
 
 
 @media (max-width: 500px) {
-    .home{
-        min-height: 90vh;
-    }
     .mid {
-        padding-top: 6rem;
-        gap: 5rem;
+        padding-top: 4rem;
+        gap: 3.5rem;
         height: 90vh;
         justify-content: start;
     }
