@@ -1,4 +1,4 @@
-import './navBar.css';
+import './nav.css';
 import favicon from '../../assets/logo2.svg'
 import favicon2 from '../../../public/logo.svg'
 
