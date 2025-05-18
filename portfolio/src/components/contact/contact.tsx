@@ -12,10 +12,10 @@ export default function Contact() {
     
     return (
         <div className="contact">
-            
-            <h2 id='text'>Contact Me</h2>
-            <p>Click to open my socials</p>
-
+            <div className='contact-text'>
+                <h2 id='text'>Contact Me</h2>
+                <p>Click to open my socials</p>
+            </div>
             <div className='all-contacts'>
                 <ContactArea name='Linkedin' image={linkedin} link='https://www.linkedin.com/in/henrique-collatto-5858bb325/'></ContactArea>
                 <ContactArea name='GitHub' image={github} link='https://github.com/HenriqueCollatto/'></ContactArea>

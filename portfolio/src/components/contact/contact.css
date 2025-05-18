@@ -3,15 +3,23 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    height: auto;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
 }
 
 
 .contact p{
     color: rgb(255, 255, 255);
-    font-size: clamp(1rem, 2vw, 5rem); 
+    font-size: clamp(1.2rem, 3vw, 2rem); 
 }
 
 .all-contacts{
@@ -20,4 +28,32 @@
     gap: 3rem; 
     justify-content: center;
     padding: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .contact{
+        padding-top: 2.5rem;
+        gap: 2rem;  
+    }
+
+    .all-contacts{
+        gap: 1.7rem; 
+        padding: 15px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .contact{
+        gap: 3rem;  
+    }
+
+    .contact-text{
+    gap: 1.3rem;
+}
+
+    .all-contacts{
+        gap: 2rem; 
+    }
 }

@@ -2,7 +2,7 @@
     height: 20rem;
     width: 20rem;
     background-color: rgb(217, 217, 217, 0.5);
-    border-radius: 50px;
+    border-radius: 15.5%;
 
     outline: 4px solid rgb(0, 0 ,0 , 0.4);
     outline-offset: 0px;
@@ -20,6 +20,7 @@
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 5px;
     
 }
 
@@ -42,4 +43,31 @@
 #contact-img{
     height: 90%;
     width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .contact-area{
+        height: 15rem;
+        width: 15rem;  
+    }
+
+    .contact-area a h4{
+        font-size: 3vh;   
+    }
+}
+
+@media (max-width: 760px) {
+    .contact-area{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .contact-area a h4{
+        font-size: 2.6vh;   
+    }
+
+    #contact-img{
+        height: 85%;
+        width: 85%;
+    }
 }
