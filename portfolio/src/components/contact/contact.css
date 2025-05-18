@@ -46,12 +46,13 @@
 @media (max-width: 760px) {
 
     .contact{
-        gap: 3rem;  
+        gap: 1.5rem; 
+        padding-top: 2rem; 
     }
 
     .contact-text{
-    gap: 1.3rem;
-}
+        gap: 1rem;
+    }
 
     .all-contacts{
         gap: 2rem; 
